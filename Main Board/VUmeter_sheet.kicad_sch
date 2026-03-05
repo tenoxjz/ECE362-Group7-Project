@@ -1,0 +1,613 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3843bf90-ae15-4fa1-8da2-ae66be328fe2")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Driver_LED:TLC5916"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLC5916"
+				(at -7.62 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc5916.pdf"
+				(at 1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "8-Channel Constant-Current LED Sink Driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED Constant-Current Driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TLC5916_1_0"
+				(pin input line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "LE(ED1)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "~{OE}(ED2)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "R-EXT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "~{OUT0}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "~{OUT1}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "~{OUT2}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~{OUT3}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~{OUT4}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~{OUT5}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "~{OUT6}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "~{OUT7}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -12.7 180)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TLC5916_1_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 7.62 -15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "VU Meter\n-2 of these\n-Decouple supply w/ 1uF electrolytic, .1uF ceramic \n(or vise versa?)\n-Use SDO"
+		(exclude_from_sim no)
+		(at 132.334 59.69 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "550c4ac9-fca5-44a6-bde7-b1e176a2f4b2")
+	)
+	(symbol
+		(lib_id "Driver_LED:TLC5916")
+		(at 135.89 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3453dbd-0240-4f59-8a1a-f02e12244e6e")
+		(property "Reference" "U3"
+			(at 138.0333 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLC5916"
+			(at 138.0333 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc5916.pdf"
+			(at 137.16 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-Channel Constant-Current LED Sink Driver"
+			(at 135.89 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "2d2bd6ae-58a8-4966-a256-c95f1d3f3a8c")
+		)
+		(pin "14"
+			(uuid "e4864de1-a222-41ec-b851-e410aca2bdef")
+		)
+		(pin "15"
+			(uuid "c06204fb-98b8-4c5b-9a8b-4d077e862cc7")
+		)
+		(pin "12"
+			(uuid "0cf27204-d229-418a-b353-a6795998f1b7")
+		)
+		(pin "2"
+			(uuid "eccabfaa-25ce-49e0-a903-575b63886e9f")
+		)
+		(pin "1"
+			(uuid "8acaa6ed-bac5-416a-b625-e7a4dfc66a9c")
+		)
+		(pin "11"
+			(uuid "0e977e0f-d978-4b00-95d5-655d69cc4124")
+		)
+		(pin "3"
+			(uuid "7d984abd-a4fe-4b96-a192-22de7ca7fb7f")
+		)
+		(pin "13"
+			(uuid "6e0327ee-9dba-4a8d-925a-8ffdb4fe396d")
+		)
+		(pin "4"
+			(uuid "16c7f46f-77f3-4434-acd6-4485b2da384d")
+		)
+		(pin "5"
+			(uuid "6f3a02d4-2b0e-4989-a745-d2086b1718f5")
+		)
+		(pin "6"
+			(uuid "e651f22f-0cd5-46c7-9634-7d4f79e44a50")
+		)
+		(pin "7"
+			(uuid "6b8bb1a8-eb33-4f1d-8b54-927b828e9967")
+		)
+		(pin "8"
+			(uuid "db9c2226-abb3-4abb-b39d-aa6790d5b9a9")
+		)
+		(pin "16"
+			(uuid "13d2c6ac-8759-4dec-b122-63026fbceb4e")
+		)
+		(pin "10"
+			(uuid "3b759842-5161-447d-be70-192011cc6a18")
+		)
+		(instances
+			(project "Main Board"
+				(path "/4e40d461-0ef2-4c4e-9b8b-d7ad8c471763/0aff127a-1382-4fee-a02d-32cfc431f446"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_LED:TLC5916")
+		(at 134.62 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f56f4e06-7747-4533-8345-6c017c09bcd8")
+		(property "Reference" "U4"
+			(at 136.7633 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLC5916"
+			(at 136.7633 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc5916.pdf"
+			(at 135.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-Channel Constant-Current LED Sink Driver"
+			(at 134.62 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "f0910046-9a87-4edd-98fd-d9079d09d26b")
+		)
+		(pin "14"
+			(uuid "90e83959-73c4-4a36-b1a9-e25764f96728")
+		)
+		(pin "15"
+			(uuid "fa1dcd07-3173-4629-a091-c686b0686203")
+		)
+		(pin "12"
+			(uuid "6fdcf315-bd9c-4707-a025-3449b93f8941")
+		)
+		(pin "2"
+			(uuid "7009b7ff-6603-4895-87bd-c36c166bd780")
+		)
+		(pin "1"
+			(uuid "43188f72-f3e0-4a00-ac61-623c5f55f4a3")
+		)
+		(pin "11"
+			(uuid "58d0c0c6-0fc6-4379-be25-55e58050342a")
+		)
+		(pin "3"
+			(uuid "5b956887-8262-4de1-9bd2-526ea2f2f275")
+		)
+		(pin "13"
+			(uuid "0ac10d5c-3872-4980-909a-e2c6a1eb68d2")
+		)
+		(pin "4"
+			(uuid "6985094a-17e0-4817-9400-5500e2284fc0")
+		)
+		(pin "5"
+			(uuid "1b20afb3-f7d1-4060-9233-1d07425f69c2")
+		)
+		(pin "6"
+			(uuid "200014ec-b51b-4b1b-a28c-c63a9e19c64e")
+		)
+		(pin "7"
+			(uuid "ee2114f4-293b-4293-bacf-50490abbbb49")
+		)
+		(pin "8"
+			(uuid "e855a0e7-5df8-4e27-add6-965b1e7d665e")
+		)
+		(pin "16"
+			(uuid "433ed198-1262-4463-8e30-25a4ca162e80")
+		)
+		(pin "10"
+			(uuid "34af85e0-062e-4823-ae6d-25871c9da272")
+		)
+		(instances
+			(project "Main Board"
+				(path "/4e40d461-0ef2-4c4e-9b8b-d7ad8c471763/0aff127a-1382-4fee-a02d-32cfc431f446"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
